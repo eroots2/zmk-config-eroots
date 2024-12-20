@@ -88,8 +88,8 @@
         mac_default_layer {
             display-name = "Mac";
             bindings = <
-                &kp TAB       &kp Q         &kp W &kp F     &kp P    &kp G          &kp J        &kp L            &kp U     &kp Y   &kp BSPC       &kp BSPC   &none &none &none &none
-                &kp CAPS      &kp A         &kp R &kp S     &kp T    &kp D          &kp H        &kp N            &kp E     &kp I   &kp O          &kp ENTER  &none &none &none &none
+                &studio_unlock &bt BT_CLR    &kp W &kp F     &kp P    &kp G          &kp J        &kp L            &kp U     &kp Y   &kp BSPC       &kp BSPC   &none &none &none &none
+                &bt BT_SEL 0  &kp A         &kp R &kp S     &kp T    &kp D          &kp H        &kp N            &kp E     &kp I   &kp O          &kp ENTER  &none &none &none &none
                 &kp LSHFT     &bm LSHFT Z   &kp X &kp C     &kp V    &kp B          &kp K        &kp M            &kp COMMA &kp DOT &bm RSHFT FSLH &kp RSHFT  &none &none &none &none
                 &td_multi_mac &td_multi_mac &none &kp LCTRL &kp LALT &sm LGUI SPACE &lt CODE TAB &lt NUMBER ENTER &none     &none   &none          &none      &none &none &none &none
                 &td_multi_mac &td_multi_mac &none &kp LCTRL &kp LALT &sm LGUI SPACE &lt CODE TAB &lt NUMBER ENTER &none     &none   &none          &none      &none &none &none &none
