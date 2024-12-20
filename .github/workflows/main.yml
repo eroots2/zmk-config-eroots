@@ -1,4 +1,22 @@
+name: Build Firmware
+
 on:
   push:
     branches:
       - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up ZMK environment
+        run: |
+          sudo apt update && sudo apt install -y git wget cmake
+
+      - name: Build firmware
+        run: |
+          ./build.sh
