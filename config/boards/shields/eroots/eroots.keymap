@@ -11,11 +11,11 @@
         default_layer {
             display-name = "default";
             bindings = <
-                &kp Q    &kp Q    &kp Q    &kp Q    &kp Q    &kp Q    &kp Q    &kp Q               &kp Q    &kp Q     &kp Q     &kp Q     &kp Q     &kp Q    &kp Q
-                &kp Q    &kp Q    &kp Q    &kp Q    &kp Q    &kp Q    &kp Q               &kp Q    &kp Q    &kp Q     &kp Q     &kp Q     &kp Q     &kp Q    &kp Q
-                &kp Q    &kp Q    &kp Q    &kp Q    &kp Q    &kp Q    &kp Q                        &kp Q    &kp Q     &kp Q     &kp Q     &kp Q     &kp Q    &kp Q
-                &kp Q    &kp Q    &kp Q    &kp Q    &kp Q    &kp Q    &kp Q                        &kp Q    &kp Q     &kp Q     &kp Q     &kp Q     &kp Q    &kp Q
-                &kp Q    &kp Q    &kp Q    &kp Q    &kp Q    &kp Q                                 &kp Q    &kp Q     &kp Q     &kp Q     &kp Q     &kp Q    &kp Q
+                &kp 1    &kp Q    &kp 1    &kp 1    &kp Q    &kp 1    &kp Q    &kp Q               &kp Q    &kp Q     &kp Q     &kp Q     &kp Q     &kp Q    &kp Q
+                &kp 2    &kp Q    &kp 2    &kp 2    &kp Q    &kp 2    &kp Q               &kp Q    &kp Q    &kp Q     &kp Q     &kp Q     &kp Q     &kp Q    &kp Q
+                &kp 3    &kp Q    &kp 3    &kp 3    &kp Q    &kp 3    &kp Q                        &kp Q    &kp Q     &kp Q     &kp Q     &kp Q     &kp Q    &kp Q
+                &kp 4    &kp Q    &kp 4    &kp 4    &kp Q    &kp 4    &kp Q                        &kp Q    &kp Q     &kp Q     &kp Q     &kp Q     &kp Q    &kp Q
+                &kp 5    &kp Q    &kp 5    &kp 5    &kp Q    &kp 5                                 &kp Q    &kp Q     &kp Q     &kp Q     &kp Q     &kp Q    &kp Q
             >;
         };
 
