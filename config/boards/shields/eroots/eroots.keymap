@@ -11,7 +11,7 @@
         default_layer {
             display-name = "default";
             bindings = <
-                &kp A    &kp B    &kp C    &kp D    &kp E    &kp F    &kp G    &kp H               &kp I    &kp J     &kp K     &kp L     &kp M     &kp N    &kp Z
+                &kp A    &kp B    &kp C    &kp D    &kp E    &kp F    &kp G    &studio_unlock      &kp I    &kp J     &kp K     &kp L     &kp M     &kp N    &kp Z
                 &kp 1    &kp 1    &kp 1    &kp 1    &kp 1    &kp 1    &kp 1               &kp Q    &kp 1    &kp 1     &kp 1     &kp 1     &kp 1     &kp 1    &kp 1
                 &kp 2    &kp 2    &kp 2    &kp 2    &kp 2    &kp 2    &kp 2                        &kp 2    &kp 2     &kp 2     &kp 2     &kp 2     &kp 2    &kp 2  
                 &kp 3    &kp 3    &kp 3    &kp 3    &kp 3    &kp 3    &kp 3                        &kp 3    &kp 3     &kp 3     &kp 3     &kp 3     &kp 3    &kp 3 
