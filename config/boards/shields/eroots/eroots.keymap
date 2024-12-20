@@ -11,22 +11,22 @@
         default_layer {
             display-name = "default";
             bindings = <
-                &kp 1    &kp Q    &kp 1    &kp 1    &kp Q    &kp 1    &kp Q    &kp Q               &kp Q    &kp Q     &kp Q     &kp Q     &kp Q     &kp Q    &kp Q
-                &kp 2    &kp Q    &kp 2    &kp 2    &kp Q    &kp 2    &kp Q               &kp Q    &kp Q    &kp Q     &kp Q     &kp Q     &kp Q     &kp Q    &kp Q
-                &kp 3    &kp Q    &kp 3    &kp 3    &kp Q    &kp 3    &kp Q                        &kp Q    &kp Q     &kp Q     &kp Q     &kp Q     &kp Q    &kp Q
-                &kp 4    &kp Q    &kp 4    &kp 4    &kp Q    &kp 4    &kp Q                        &kp Q    &kp Q     &kp Q     &kp Q     &kp Q     &kp Q    &kp Q
-                &kp 5    &kp Q    &kp 5    &kp 5    &kp Q    &kp 5                                 &kp Q    &kp Q     &kp Q     &kp Q     &kp Q     &kp Q    &kp Q
+                &kp A    &kp B    &kp C    &kp D    &kp E    &kp F    &kp G    &kp H               &kp I    &kp J     &kp K     &kp L     &kp M     &kp N    &kp Z
+                &kp 1    &kp 1    &kp 1    &kp 1    &kp 1    &kp 1    &kp 1               &kp Q    &kp 1    &kp 1     &kp 1     &kp 1     &kp 1     &kp 1    &kp 1
+                &kp 2    &kp 2    &kp 2    &kp 2    &kp 2    &kp 2    &kp 2                        &kp 2    &kp 2     &kp 2     &kp 2     &kp 2     &kp 2    &kp 2  
+                &kp 3    &kp 3    &kp 3    &kp 3    &kp 3    &kp 3    &kp 3                        &kp 3    &kp 3     &kp 3     &kp 3     &kp 3     &kp 3    &kp 3 
+                &kp 4    &kp 4    &kp 4    &kp 4    &kp 4    &kp 4                                 &kp 4    &kp 4     &kp 4     &kp 4     &kp 4     &kp 4    &kp 4 
             >;
         };
 
         lower_layer {
             display-name = "lower";
             bindings = <
-                &kp Q    &kp Q    &kp Q    &kp Q    &kp Q    &kp Q    &kp Q    &kp Q               &kp Q    &kp Q     &kp Q     &kp Q     &kp Q     &kp Q    &kp Q
-                &kp Q    &kp Q    &kp Q    &kp Q    &kp Q    &kp Q    &kp Q               &kp Q    &kp Q    &kp Q     &kp Q     &kp Q     &kp Q     &kp Q    &kp Q
-                &kp Q    &kp Q    &kp Q    &kp Q    &kp Q    &kp Q    &kp Q                        &kp Q    &kp Q     &kp Q     &kp Q     &kp Q     &kp Q    &kp Q
-                &kp Q    &kp Q    &kp Q    &kp Q    &kp Q    &kp Q    &kp Q                        &kp Q    &kp Q     &kp Q     &kp Q     &kp Q     &kp Q    &kp Q
-                &kp Q    &kp Q    &kp Q    &kp Q    &kp Q    &kp Q                                 &kp Q    &kp Q     &kp Q     &kp Q     &kp Q     &kp Q    &kp Q
+                &kp A    &kp B    &kp C    &kp D    &kp E    &kp F    &kp G    &kp H               &kp I    &kp J     &kp K     &kp L     &kp M     &kp N    &kp Z
+                &kp 1    &kp 1    &kp 1    &kp 1    &kp 1    &kp 1    &kp 1               &kp Q    &kp 1    &kp 1     &kp 1     &kp 1     &kp 1     &kp 1    &kp 1
+                &kp 2    &kp 2    &kp 2    &kp 2    &kp 2    &kp 2    &kp 2                        &kp 2    &kp 2     &kp 2     &kp 2     &kp 2     &kp 2    &kp 2  
+                &kp 3    &kp 3    &kp 3    &kp 3    &kp 3    &kp 3    &kp 3                        &kp 3    &kp 3     &kp 3     &kp 3     &kp 3     &kp 3    &kp 3 
+                &kp 4    &kp 4    &kp 4    &kp 4    &kp 4    &kp 4                                 &kp 4    &kp 4     &kp 4     &kp 4     &kp 4     &kp 4    &kp 4 
             >;  
         };
     };
