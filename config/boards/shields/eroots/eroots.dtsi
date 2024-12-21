@@ -5,7 +5,7 @@
 / {
     chosen {
         zmk,physical-layout = &layout;
-        zmk,kscan = &kscan0;
+        zmk,kscan = &kscan;
         zephyr,display = &oled;
     };
 
