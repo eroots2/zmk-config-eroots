@@ -5,6 +5,8 @@
 / {
     chosen {
         zmk,physical-layout = &layout;
+        zmk,kscan = &kscan0;
+        zephyr,display = &oled;
     };
 
 
@@ -12,7 +14,7 @@
         compatible = "zmk,split-role";
 
         left {
-            i2c-devices = <&ssd1306>;
+            i2c-devices = <&oled>;
         };
 
         right {
@@ -140,14 +142,14 @@
 
 &i2c0 {
     status = "okay";
-    compatible = "nordic,nrf-twim";
+    /* compatible = "nordic,nrf-twim"; */
 
     trackball: trackball_pim447@a {
            	compatible = "pimoroni,trackball_pim447";
            	reg = <0xa>;
            	label = "TRACKBALL_PIM447";
     };
-    ssd1306: ssd1306@3c {
+    oled: ssd1306@3c {
         compatible = "solomon,ssd1306fb";
         reg = <0x3c>;              /* I2C address */
         width = <128>;
