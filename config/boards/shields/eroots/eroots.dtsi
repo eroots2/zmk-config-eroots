@@ -1,7 +1,6 @@
 #include <physical_layouts.dtsi>
 #include <dt-bindings/zmk/matrix_transform.h>
-#include <dt-bindings/zmk/trackball_pim447.h>
-
+// #include <dt-bindings/zmk/trackball_pim447.h>
 
 / {
     chosen {
@@ -17,10 +16,11 @@
         left {
             i2c-devices = <&oled>;
         };
-
+        
+        /*
         right {
             i2c-devices = <&trackball>;
-        };
+        }; */
     };
 
     kscan: kscan {
@@ -141,15 +141,15 @@
 
 };
 
-&i2c0 {
+&i2c1 {
     status = "okay";
     /* compatible = "nordic,nrf-twim"; */
 
-    trackball: trackball_pim447@a {
+   /* trackball: trackball_pim447@a {
            	compatible = "pimoroni,trackball_pim447";
            	reg = <0xa>;
            	label = "TRACKBALL_PIM447";
-    };
+    }; */
     oled: ssd1306@3c {
         compatible = "solomon,ssd1306fb";
         reg = <0x3c>;              /* I2C address */
