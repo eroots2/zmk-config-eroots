@@ -9,7 +9,7 @@
         zephyr,display = &oled;
     };
 
-
+/*
     zmk,splits {
         compatible = "zmk,split-role";
 
@@ -17,11 +17,10 @@
             i2c-devices = <&oled>;
         };
 
-        /*
         right {
             i2c-devices = <&trackball>;
-        }; */
-    };
+        };
+    }; */
 
     kscan: kscan {
         compatible = "zmk,kscan-gpio-matrix";
