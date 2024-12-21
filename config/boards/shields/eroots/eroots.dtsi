@@ -140,6 +140,8 @@
 
 &i2c0 {
     status = "okay";
+    sda-pin = <32>;
+    scl-pin = <11>;
     trackball: trackball_pim447@a {
            	compatible = "pimoroni,trackball_pim447";
            	reg = <0xa>;
