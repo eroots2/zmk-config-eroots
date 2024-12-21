@@ -140,8 +140,8 @@
 &pro_micro_i2c {
     status = "okay";
 
-    sda-pin = <32>;
-    scl-pin = <11>;
+    sda_pin = <32>;
+    scl_pin = <11>;
 
     trackball: trackball_pim447@a {
            	compatible = "pimoroni,trackball_pim447";
