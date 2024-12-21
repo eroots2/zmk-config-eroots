@@ -138,10 +138,9 @@
 
 };
 
-&i2c1 {
+&i2c0 {
     status = "okay";
-    pinctrl-0 = <&i2c1_default>;
-    pinctrl-names = "default";
+    compatible = "nordic,nrf-twim";
 
     trackball: trackball_pim447@a {
            	compatible = "pimoroni,trackball_pim447";
@@ -158,6 +157,3 @@
     };
 };
 
-&i2c1_default {
-    nordic,twim-pin = <1 0>, <0 11>;
-};
