@@ -7,6 +7,16 @@
         zmk,physical-layout = &layout;
     };
 
+
+    &i2c  {
+        status = "okay";
+        trackball_pim447@a {
+               	compatible = "pimoroni,trackball_pim447";
+               	reg = <0xa>;
+               	label = "TRACKBALL_PIM447";
+            };
+    };
+
     kscan: kscan {
         compatible = "zmk,kscan-gpio-matrix";
         diode-direction = "col2row";
