@@ -161,8 +161,8 @@
 &pinctrl {
     i2c1_default: i2c1_default {
         nordic,pins = <
-            0 11 NRF_PSEL_TWIM_SCL /* P1.00 */
-            1 0 NRF_PSEL_TWIM_SDA /* P0.11 */
+            0 11 NRF_PSEL_TWIM_SCL 
+            1 0 NRF_PSEL_TWIM_SDA 
         >;
     };
 };
