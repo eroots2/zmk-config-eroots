@@ -2,6 +2,12 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
+#define LY0 0
+#define LY1 1
+#define LY2 2
+#define LY3 3
+#define LY4 4
+#define LY5 5
 
 
 / {
@@ -11,11 +17,11 @@
         default_layer {
             display-name = "default";
             bindings = <
-                &kp A    &kp B    &kp C    &kp D    &kp E    &kp F    &kp G    &studio_unlock      &kp I    &kp J     &kp K     &kp L     &kp M     &kp N    &kp Z
-                &kp 1    &kp 1    &kp 1    &kp 1    &kp 1    &kp 1    &kp 1               &kp Q    &kp 1    &kp 1     &kp 1     &kp 1     &kp 1     &kp 1    &kp 1
-                &kp 2    &kp 2    &kp 2    &kp 2    &kp 2    &kp 2    &kp 2                        &kp 2    &kp 2     &kp 2     &kp 2     &kp 2     &kp 2    &kp 2  
-                &kp 3    &kp 3    &kp 3    &kp 3    &kp 3    &kp 3    &kp 3                        &kp 3    &kp 3     &kp 3     &kp 3     &kp 3     &kp 3    &kp 3 
-                &kp 4    &kp 4    &kp 4    &kp 4    &kp 4    &kp 4                                 &kp 4    &kp 4     &kp 4     &kp 4     &kp 4     &kp 4    &kp 4 
+                &kp ESC  &kp GRAVE &kp N1   &kp N2   &kp N3   &kp N4   &kp N5   &kp N6              &kp N7   &kp N8    &kp N9    &kp N0    &kp MINUS &kp PLUS &kp BSPC
+                &kp 1    &kp TAB   &kp Q    &kp W    &kp E    &kp R    &kp T               &kp Y    &kp U    &kp I     &kp O     &kp P     &kp LBKT  &kp RBKT &kp BSLH
+                &kp DEL  &kp CAPS  &kp A    &kp S    &kp D    &kp F    &kp G                        &kp H    &kp J     &kp K     &kp L     &kp SEMI  &kp SQT  &kp ENTER
+                &kp 3    &kp LSHFT &kp Z    &kp X    &kp C    &kp C    &kp B                        &kp B    &kp N     &kp M     &kp COMMA &kp DOT   &kp FSLH &kp RSHFT
+                &kp 4    &kp LCTRL &kp LGUI &kp LALT &studio_unlock &kp SPACE                       &mo LY1  &kp SPACE &tog LY2   &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT
             >;
         };
 
@@ -33,11 +39,11 @@
         upper_layer {
             display-name = "upper";
             bindings = <
-                &kp A    &kp B    &kp C    &kp D    &kp E    &kp F    &kp G    &kp H               &kp I    &kp J     &kp K     &kp L     &kp M     &kp N    &kp Z
-                &kp 1    &kp 1    &kp 1    &kp 1    &kp 1    &kp 1    &kp 1               &kp Q    &kp 1    &kp 1     &kp 1     &kp 1     &kp 1     &kp 1    &kp 1
-                &kp 2    &kp 2    &kp 2    &kp 2    &kp 2    &kp 2    &kp 2                        &kp 2    &kp 2     &kp 2     &kp 2     &kp 2     &kp 2    &kp 2  
-                &kp 3    &kp 3    &kp 3    &kp 3    &kp 3    &kp 3    &kp 3                        &kp 3    &kp 3     &kp 3     &kp 3     &kp 3     &kp 3    &kp 3 
-                &kp 4    &kp 4    &kp 4    &kp 4    &kp 4    &kp 4                                 &kp 4    &kp 4     &kp 4     &kp 4     &kp 4     &kp 4    &kp 4 
+                &kp A    &bt BT_CLR   &kp C    &kp D    &kp E    &kp F    &kp G    &kp H               &kp I    &kp J     &kp K     &kp L     &kp M     &kp N    &kp Z
+                &kp 1    &kp 1        &kp 1    &kp 1    &kp 1    &kp 1    &kp 1               &kp Q    &kp 1    &kp 1     &kp 1     &kp 1     &kp 1     &kp 1    &kp 1
+                &kp 2    &kp 2        &kp 2    &kp 2    &kp 2    &kp 2    &kp 2                        &kp 2    &kp 2     &kp 2     &kp 2     &kp 2     &kp 2    &kp 2  
+                &kp 3    &kp 3        &kp 3    &kp 3    &kp 3    &kp 3    &kp 3                        &kp 3    &kp 3     &kp 3     &kp 3     &kp 3     &kp 3    &kp 3 
+                &kp 4    &kp 4        &kp 4    &kp 4    &kp 4    &kp 4                                 &kp 4    &kp 4     &tog LY2  &kp 4     &kp 4     &kp 4    &kp 4 
             >;  
         };
 
