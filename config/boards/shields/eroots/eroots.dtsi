@@ -137,11 +137,11 @@
 
 
 };
-&pro_micro_i2c {
-    status = "okay";
 
-    sda_pin = <32>;
-    scl_pin = <11>;
+&i2c1 {
+    status = "okay";
+    pinctrl-0 = <&i2c1_default>;
+    pinctrl-names = "default";
 
     trackball: trackball_pim447@a {
            	compatible = "pimoroni,trackball_pim447";
@@ -158,4 +158,11 @@
     };
 };
 
-
+&pinctrl {
+    i2c1_default: i2c1_default {
+        nordic,pins = <
+            0 11 NRF_PSEL_TWIM_SCL /* P1.00 */
+            1 0 NRF_PSEL_TWIM_SDA /* P0.11 */
+        >;
+    };
+};
