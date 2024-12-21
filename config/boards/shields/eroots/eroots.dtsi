@@ -140,8 +140,10 @@
 
 &i2c1 {
     status = "okay";
-    sda-pin = <32>;
-    scl-pin = <11>;
+
+    pinctrl-0 = <&i2c1_scl &i2c1_sda>;
+    pinctrl-names = "default";
+
     trackball: trackball_pim447@a {
            	compatible = "pimoroni,trackball_pim447";
            	reg = <0xa>;
@@ -154,5 +156,15 @@
         height = <32>;
         segment-offset = <0>;
         page-offset = <0>;
+    };
+};
+
+&pinmux {
+    i2c1_sda: i2c1_sda {
+        nordic,pins = <1 0 NRF_PSEL_TWIM_SDA>;  /* P1.00 (SCL) */
+    };
+
+    i2c1_scl: i2c1_scl {
+        nordic,pins = <0 11 NRF_PSEL_TWIM_SCL>; /* P0.11 (SDA) */
     };
 };
