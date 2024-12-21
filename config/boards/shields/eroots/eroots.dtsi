@@ -11,12 +11,10 @@
     zmk,splits {
         compatible = "zmk,split-role";
 
-        /* Left board (main) */
         left {
             i2c-devices = <&ssd1306>;
         };
 
-        /* Right board (peripheral) */
         right {
             i2c-devices = <&trackball>;
         };
@@ -138,20 +136,21 @@
     };
 
 
-    &i2c1 {
-        status = "okay";
-        trackball_pim447@a {
-               	compatible = "pimoroni,trackball_pim447";
-               	reg = <0xa>;
-               	label = "TRACKBALL_PIM447";
-        };
-        ssd1306: ssd1306@3c {
-            compatible = "solomon,ssd1306fb";
-            reg = <0x3c>;              /* I2C address */
-            width = <128>;
-            height = <32>;
-            segment-offset = <0>;
-            page-offset = <0>;
-        };
+};
+
+&i2c1 {
+    status = "okay";
+    trackball: trackball_pim447@a {
+           	compatible = "pimoroni,trackball_pim447";
+           	reg = <0xa>;
+           	label = "TRACKBALL_PIM447";
+    };
+    ssd1306: ssd1306@3c {
+        compatible = "solomon,ssd1306fb";
+        reg = <0x3c>;              /* I2C address */
+        width = <128>;
+        height = <32>;
+        segment-offset = <0>;
+        page-offset = <0>;
     };
 };
