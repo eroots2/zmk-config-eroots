@@ -1,6 +1,5 @@
 #include "eroots.dtsi"
 
-/*
 &kscan {
     col-gpios = <&gpio0 31 GPIO_ACTIVE_HIGH>,
                 <&gpio0 29 GPIO_ACTIVE_HIGH>,
@@ -10,4 +9,4 @@
                 <&gpio1 11 GPIO_ACTIVE_HIGH>,
                 <&gpio0 10 GPIO_ACTIVE_HIGH>,
                 <&gpio0  9 GPIO_ACTIVE_HIGH>;
-}; */
+};
