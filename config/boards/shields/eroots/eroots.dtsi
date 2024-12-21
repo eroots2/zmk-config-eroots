@@ -139,7 +139,6 @@
 };
 
 &i2c0 {
-    pinctrl-0 = <&gpio0 11 &gpio1 0>;
     status = "okay";
     trackball: trackball_pim447@a {
            	compatible = "pimoroni,trackball_pim447";
