@@ -16,7 +16,7 @@
         left {
             i2c-devices = <&oled>;
         };
-        
+
         /*
         right {
             i2c-devices = <&trackball>;
@@ -141,9 +141,13 @@
 
 };
 
-&i2c1 {
+&i2c0 {
+    compatible = "nordic,nrf-twim"; // I2C controller instead of generic
     status = "okay";
-    /* compatible = "nordic,nrf-twim"; */
+    pinctrl-0 = <&i2c0_default>;
+    pinctrl-1 = <&i2c0_sleep>;
+    pinctrl-names = "default", "sleep";
+    clock-frequency = <I2C_BITRATE_FAST>;
 
    /* trackball: trackball_pim447@a {
            	compatible = "pimoroni,trackball_pim447";
@@ -163,6 +167,25 @@
         com-invdir;
         com-sequential;
         prechargep = <0x22>;
+    };
+};
+
+
+&pinctrl {
+    /* configuration for i2c0 device, default state */
+    i2c0_default: i2c0_default {
+        group1 {
+            psels = <NRF_PSEL(TWIM_SDA, 1, 0)>,
+                <NRF_PSEL(TWIM_SCL, 0, 11)>;
+        };
+    };
+
+    i2c0_sleep: i2c0_sleep {
+        group1 {
+            psels = <NRF_PSEL(TWIM_SDA, 1, 0)>,
+                <NRF_PSEL(TWIM_SCL, 0, 11)>;
+            low-power-enable;
+        };
     };
 };
 
