@@ -6,21 +6,8 @@
     chosen {
         zmk,physical-layout = &layout;
         zmk,kscan = &kscan;
-        zephyr,display = &oled;
     };
 
-/*
-    zmk,splits {
-        compatible = "zmk,split-role";
-
-        left {
-            i2c-devices = <&oled>;
-        };
-
-        right {
-            i2c-devices = <&trackball>;
-        };
-    }; */
 
     kscan: kscan {
         compatible = "zmk,kscan-gpio-matrix";
@@ -139,6 +126,9 @@
 
 
 };
+
+
+/*
 &pro_micro_i2c {
     compatible = "nordic,nrf-twim"; // I2C controller instead of generic
     status = "okay";
@@ -181,4 +171,4 @@
         };
     };
 };
-
+*/
