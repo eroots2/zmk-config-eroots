@@ -96,7 +96,7 @@
 		compatible = "zmk,input-listener";
 		device = <&pimoroni_pim447>;
 //	    xy-swap;
-        y-invert;
+//      y-invert;
         scale-multiplier = <1>;
 	    scale-divisor = <1>;
 	};
