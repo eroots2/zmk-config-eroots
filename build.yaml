@@ -20,6 +20,6 @@
 include:
     - board: nice_nano_v2
       shield: eroots_left 
-      snippet: studio-rpc-usb-uart zmk-usb-logging
+      snippet: studio-rpc-usb-uart 
     - board: nice_nano_v2
       shield: eroots_right
