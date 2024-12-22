@@ -11,6 +11,11 @@
                 <&gpio0  9 GPIO_ACTIVE_HIGH>;
 };
 
+/ {
+    chosen {
+        zephyr,display = &oled;
+    };
+};
 
 
 &pinctrl {
@@ -32,11 +37,6 @@
 	};
 };
 
-/ {
-    chosen {
-        zephyr,display = &oled;
-    };
-};
 
 &i2c0 {
 	status = "okay";
