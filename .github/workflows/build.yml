@@ -2,5 +2,6 @@ on: [push, pull_request, workflow_dispatch]
 
 jobs:
   build:
-    uses: cdc-mkb/zmk/.github/workflows/build.yml@main
+    # uses: cdc-mkb/zmk/.github/workflows/build.yml@main
     # uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+    uses: cdc-mkb/zmk/.github/workflows/build-user-config.yml@main
