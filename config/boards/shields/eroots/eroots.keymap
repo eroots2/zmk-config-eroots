@@ -26,9 +26,18 @@
 / {
         combos {
                 compatible = "zmk,combos";
-                      
-                COMBO(entr, &kp ENTER, 39 40)
-                COMBO(bspc, &kp BSPC, 40 41)
+                combo_entr {
+                    timeout_ms = <50>;
+                    bindings = <&kp ENTER>;
+                    key-positions = <39 40>;
+                    layers = <-1>;
+                }
+                combo_bspc {
+                    timeout_ms = <50>;
+                    bindings = <&kp BSPC>;
+                    key-positions = <41 42>;
+                    layers = <-1>;
+                }
         };
 
         behaviors {
