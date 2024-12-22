@@ -8,6 +8,7 @@
     chosen {
         zmk,physical-layout = &layout;
         zmk,kscan = &kscan;
+        zephyr,display = &oled;
     };
 
 
