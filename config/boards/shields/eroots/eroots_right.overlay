@@ -35,7 +35,7 @@
 		};
 	};
 };
-
+/*
 &i2c0 {
     status = "okay";
 
@@ -60,3 +60,4 @@
 		mode = <PIM447_SCROLL>; // Act as mouse wheels at startup (default: PIM447_MOVE for a pointer)
 	};
 };
+*/
