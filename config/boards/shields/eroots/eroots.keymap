@@ -29,12 +29,12 @@
                     timeout_ms = <30>;
                     key-positions = <39 40>;
                     bindings = <&kp ENTER>;
-                }
+                };
                 combo_bspc {
                     timeout_ms = <30>;
                     key-positions = <41 42>;
                     bindings = <&kp BSPC>;
-                }
+                };
         };
 };
 
