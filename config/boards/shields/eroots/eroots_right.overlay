@@ -43,61 +43,34 @@
 };
 
 
-
 &i2c0 {
     status = "okay";
-
 
     compatible = "nordic,nrf-twi";
     pinctrl-0 = <&i2c0_default>;
     pinctrl-1 = <&i2c0_sleep>;
     pinctrl-names = "default", "sleep";
-    clock-frequency = <400000>;
+    clock-frequency = <I2C_BITRATE_FAST>;
 
-    pimoroni_pim447: zmk_pimoroni_pim447@0a {
-        compatible = "zephyr,input-device", "zmk,pimoroni-pim447";
+    mouse_ps2: mouse_ps2@0a {
+        compatible = "pimoroni,pim447";
         reg = <0x0A>;
-		int-gpios = <&gpio0 8 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-        automouse-layer = <7>;
+        label = "PIM447";
+        interrupt-gpios = <&gpio0 9 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+		status = "okay";
     };
 
-};
-
-
-&mmv {
-    acceleration-exponent = <1>;  // 1
-    time-to-max-speed-ms = <300>; // 300
-    delay-ms = <0>;
-    trigger-period-ms = <8>;      // 16
-};
-
-&msc {
-    acceleration-exponent = <1>;  // 0
-    time-to-max-speed-ms = <40>;  // 300
-    delay-ms = <0>;
-    trigger-period-ms = <8>;      // 16
 };
 
 / {
-    behaviors {
-        // mmv: mouse_move {
-        //     compatible = "zmk,behavior-input-two-axis";
-        //     #binding-cells = <1>;
-        //     x-input-code = <INPUT_REL_X>;
-        //     y-input-code = <INPUT_REL_Y>;
-        //     time-to-max-speed-ms = <500>;
-        //     acceleration-exponent = <1>;
-        // };
 
+    mouse_ps2_input_listener: mouse_ps2_input_listener {
+        compatible = "zmk,input-listener";
+        status = "okay";
+        
+        scale-multiplier = <5>;
+        scale-divisor = <3>;
 
+        device = <&mouse_ps2>;
     };
-
-	pimoroni_pim447_listener {
-		compatible = "zmk,input-listener";
-		device = <&pimoroni_pim447>;
-//	    xy-swap;
-//      y-invert;
-//      scale-multiplier = <1>;
-//      scale-divisor = <1>;
-	};
 };

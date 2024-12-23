@@ -2,6 +2,12 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: krikun98
+      url-base: https://github.com/krikun98
+    - name: ftc
+      url-base: https://github.com/ftc
+    - name: urob
+      url-base: https://github.com/urob
     - name: t0bybr
       url-base: https://github.com/t0bybr
     # Additional modules containing boards/shields/custom code can be listed here as well
@@ -11,9 +17,5 @@ manifest:
       remote: zmkfirmware
       revision: main
       import: app/west.yml
-    - name: pim447
-      remote: t0bybr
-      revision: main
-      # import: app/west.yml
   self:
     path: config
