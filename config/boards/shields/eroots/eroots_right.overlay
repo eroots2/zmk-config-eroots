@@ -7,7 +7,6 @@
 #include <dt-bindings/zmk/mouse.h>
 
 #include <behaviors/mouse_keys.dtsi>
-#include <behaviors/mouse_move.dtsi>
 
 &transform {
     col-offset = <8>;
@@ -42,7 +41,7 @@
 	};
 };
 
-
+/*
 &i2c0 {
     status = "okay";
 
@@ -74,3 +73,4 @@
         device = <&mouse_ps2>;
     };
 };
+*/
