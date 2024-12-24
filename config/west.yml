@@ -1,17 +1,18 @@
 manifest:
   remotes:
-    # - name: zmkfirmware
-      # url-base: https://github.com/zmkfirmware
-    # - name: t0bybr
     - name: zmkfirmware
-      url-base: https://github.com/t0bybr
+      url-base: https://github.com/zmkfirmware
+    - name: t0bybr
+      url: https://github.com/t0bybr
     # Additional modules containing boards/shields/custom code can be listed here as well
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
   projects:
     - name: zmk
       remote: zmkfirmware
-      # revision: main
-      revision: pr2027
+      revision: main
       import: app/west.yml
+    - name: pim447
+      remote: t0bybr
+      revision: main
   self:
     path: config
