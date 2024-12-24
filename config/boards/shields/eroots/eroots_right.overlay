@@ -246,8 +246,8 @@
         compatible = "zmk,input-listener";
         status = "okay";
         
-        scale-multiplier = <5>;
-        scale-divisor = <3>;
+ //     scale-multiplier = <5>;
+ //     scale-divisor = <3>;
 
         device = <&mouse_ps2>;
     };
