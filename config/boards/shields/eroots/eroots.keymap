@@ -101,7 +101,7 @@
         upper_layer {
             display-name = "MOUSE";
             bindings = <
-                &studio_unlock  &trans   &trans         &trans         &trans    &trans    &trans    &trans               &trans    &trans     &trans     &trans     &trans     &trans    &trans
+                &trans          &trans   &trans         &trans         &trans    &trans    &trans    &trans               &trans    &trans     &trans     &trans     &trans     &trans    &trans
                 &trans          &trans   &kp F21        &kp F22        &kp F23    &trans    &trans               &trans    &trans    &trans     &trans     &trans     &trans     &trans    &trans
                 &trans          &trans   &kp KP_N1      &kp KP_N2       &trans    &trans    &trans                        &trans    &trans     &trans     &trans     &trans     &trans    &trans  
                 &trans          &trans   &kp KP_N3      &kp KP_N4       &trans    &trans    &trans                        &trans    &trans     &trans     &trans     &trans     &trans    &trans 
