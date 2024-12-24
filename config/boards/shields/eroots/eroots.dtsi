@@ -129,8 +129,6 @@
 
 };
 
-&xiao_spi { status = "disabled"; };
-&xiao_serial { status = "disabled"; };
 
 /*
 &mkp_input_listener {
